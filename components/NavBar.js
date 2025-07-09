@@ -1,4 +1,4 @@
-import "@/styles/globals.css";import Link from 'next/link';
+import Link from 'next/link';
 
 export default function NavBar() {
   return (
@@ -8,18 +8,5 @@ export default function NavBar() {
       <Link href="/privacy-policy" className="text-gray-700 hover:text-black">Privacy</Link>
       <Link href="/terms-of-service" className="text-gray-700 hover:text-black">Terms</Link>
     </nav>
-  );
-}
-
-
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-}
-export default function App({ Component, pageProps }) {
-  return (
-    <>
-      <NavBar />
-      <Component {...pageProps} />
-    </>
   );
 }
